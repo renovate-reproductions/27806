@@ -10,7 +10,8 @@
         "matchPackageNames": [
           "debian"
         ],
-        "versioning": "debian"
+        "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
+        "versioning": "loose"
       },
       {
         "matchDatasources": ["docker"],
