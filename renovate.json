@@ -1,0 +1,33 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+      "config:recommended"
+    ],
+  
+    "packageRules": [
+      {
+        "matchDatasources": ["docker"],
+        "matchPackageNames": [
+          "debian"
+        ],
+        "versioning": "debian"
+      },
+      {
+        "matchDatasources": ["docker"],
+        "matchPackageNames": [
+          "ubuntu"
+        ],
+        "versioning": "ubuntu"
+      },
+      {
+        "matchDatasources": ["docker"],
+        "matchPackageNames": [
+          "debian",
+          "ubuntu"
+        ],
+        "matchUpdateTypes": ["major"],
+        "enabled": false
+      }
+    ]
+  }
+  
